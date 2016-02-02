@@ -10,6 +10,7 @@
 		656A00031C612C300029BF3F /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656A00021C612C300029BF3F /* PostModel.swift */; };
 		656A00051C612EE40029BF3F /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656A00041C612EE40029BF3F /* ProfileModel.swift */; };
 		656A00071C6132C40029BF3F /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656A00061C6132C40029BF3F /* ProfileController.swift */; };
+		656A00091C6137100029BF3F /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656A00081C6137100029BF3F /* FeedController.swift */; };
 		656AFFD21C6041500029BF3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AFFD11C6041500029BF3F /* AppDelegate.swift */; };
 		656AFFD41C6041500029BF3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AFFD31C6041500029BF3F /* ViewController.swift */; };
 		656AFFD71C6041500029BF3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656AFFD51C6041500029BF3F /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		656A00021C612C300029BF3F /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		656A00041C612EE40029BF3F /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		656A00061C6132C40029BF3F /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		656A00081C6137100029BF3F /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		656AFFCE1C6041500029BF3F /* Facegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656AFFD11C6041500029BF3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		656AFFD31C6041500029BF3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				656A00061C6132C40029BF3F /* ProfileController.swift */,
+				656A00081C6137100029BF3F /* FeedController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656A00071C6132C40029BF3F /* ProfileController.swift in Sources */,
+				656A00091C6137100029BF3F /* FeedController.swift in Sources */,
 				656AFFD41C6041500029BF3F /* ViewController.swift in Sources */,
 				656A00031C612C300029BF3F /* PostModel.swift in Sources */,
 				656AFFD21C6041500029BF3F /* AppDelegate.swift in Sources */,

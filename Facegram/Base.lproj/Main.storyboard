@@ -754,13 +754,13 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
         <!--facegram-->
         <scene sceneID="gQx-PE-SeJ">
             <objects>
-                <tableViewController id="gxi-fD-xIs" sceneMemberID="viewController">
+                <tableViewController id="gxi-fD-xIs" customClass="FeedController" customModule="Facegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="smO-pn-J8h">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="208" id="gim-OF-52Q">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="208" id="gim-OF-52Q" customClass="PostCell" customModule="Facegram" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gim-OF-52Q" id="wMt-Mg-y2n">
@@ -929,6 +929,10 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="captionLabel" destination="9tr-C5-xZe" id="lmA-DB-Hvg"/>
+                                    <outlet property="imgView" destination="z1o-X4-gy9" id="WXM-Ci-cM2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
