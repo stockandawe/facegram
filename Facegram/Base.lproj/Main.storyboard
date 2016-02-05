@@ -9,10 +9,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Camera Controller-->
         <scene sceneID="kAb-mi-lCo">
             <objects>
-                <viewController storyboardIdentifier="CameraPopup" id="MFh-Uo-qjs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraPopup" id="MFh-Uo-qjs" customClass="CameraController" customModule="Facegram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ckm-43-TWg"/>
                         <viewControllerLayoutGuide type="bottom" id="F8i-1W-4MO"/>
@@ -41,6 +41,9 @@
                                         <include reference="le6-MN-F4B"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="dismissPhotoPicker:" destination="MFh-Uo-qjs" eventType="touchUpInside" id="4DN-zD-EdE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Photo Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-nT-V5s">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -114,6 +117,9 @@
                                         <include reference="bHi-6F-3Qj"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="MFh-Uo-qjs" eventType="touchUpInside" id="IJg-Vq-RTC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SN5-BY-NU7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -138,6 +144,9 @@
                                         <include reference="tMb-ew-VR0"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="takePhoto:" destination="MFh-Uo-qjs" eventType="touchUpInside" id="pUf-ns-3rO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -220,6 +229,10 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="camera" id="l1B-9I-6Ua"/>
+                    <connections>
+                        <outlet property="selectedImageView" destination="PbD-t6-1jY" id="xhy-F7-8PR"/>
+                        <outlet property="sourceLabel" destination="PN6-nT-V5s" id="dzL-eP-i7Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIY-ev-9bN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

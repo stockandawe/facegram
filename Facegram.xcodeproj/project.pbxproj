@@ -19,6 +19,7 @@
 		656AFFE71C6041500029BF3F /* FacegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AFFE61C6041500029BF3F /* FacegramTests.swift */; };
 		656AFFF21C6041500029BF3F /* FacegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AFFF11C6041500029BF3F /* FacegramUITests.swift */; };
 		65F651E21C647B3E005BF4F0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F651E11C647B3E005BF4F0 /* CustomTabBarController.swift */; };
+		65F651E41C656AFC005BF4F0 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F651E31C656AFC005BF4F0 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		656AFFF11C6041500029BF3F /* FacegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacegramUITests.swift; sourceTree = "<group>"; };
 		656AFFF31C6041500029BF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F651E11C647B3E005BF4F0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		65F651E31C656AFC005BF4F0 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				656A00061C6132C40029BF3F /* ProfileController.swift */,
 				656A00081C6137100029BF3F /* FeedController.swift */,
 				65F651E11C647B3E005BF4F0 /* CustomTabBarController.swift */,
+				65F651E31C656AFC005BF4F0 /* CameraController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				656AFFD41C6041500029BF3F /* ViewController.swift in Sources */,
 				656A00031C612C300029BF3F /* PostModel.swift in Sources */,
 				656AFFD21C6041500029BF3F /* AppDelegate.swift in Sources */,
+				65F651E41C656AFC005BF4F0 /* CameraController.swift in Sources */,
 				656A00051C612EE40029BF3F /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
