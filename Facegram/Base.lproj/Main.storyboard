@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="kAb-mi-lCo">
             <objects>
-                <viewController id="MFh-Uo-qjs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraPopup" id="MFh-Uo-qjs" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ckm-43-TWg"/>
                         <viewControllerLayoutGuide type="bottom" id="F8i-1W-4MO"/>
@@ -732,10 +732,10 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
             </objects>
             <point key="canvasLocation" x="1734" y="1275"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Center Tab Bar Controller-->
         <scene sceneID="cta-xl-OE0">
             <objects>
-                <tabBarController id="jeJ-B5-0Km" sceneMemberID="viewController">
+                <tabBarController id="jeJ-B5-0Km" customClass="CenterTabBarController" customModule="Facegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="BW9-yS-SaG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -935,10 +935,10 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="48" id="qoE-Me-pJg" customClass="PostHeaderCell" customModule="Facegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="208"/>
+                                <rect key="frame" x="0.0" y="300" width="600" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qoE-Me-pJg" id="DiC-5O-0JS">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="207"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4fT-f6-rA9">
@@ -994,11 +994,11 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                             <exclude reference="lnz-31-f31"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="Kvm-6w-rab"/>
-                                            <exclude reference="ZuV-Uk-eL9"/>
                                             <exclude reference="3uG-2B-GGK"/>
                                             <exclude reference="bG7-vW-Yce"/>
                                             <exclude reference="rhP-TK-REZ"/>
+                                            <exclude reference="Kvm-6w-rab"/>
+                                            <exclude reference="ZuV-Uk-eL9"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -1007,11 +1007,11 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                             <include reference="lnz-31-f31"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="Kvm-6w-rab"/>
-                                            <include reference="ZuV-Uk-eL9"/>
                                             <include reference="3uG-2B-GGK"/>
                                             <include reference="bG7-vW-Yce"/>
                                             <include reference="rhP-TK-REZ"/>
+                                            <include reference="Kvm-6w-rab"/>
+                                            <include reference="ZuV-Uk-eL9"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

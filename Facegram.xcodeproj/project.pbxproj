@@ -18,6 +18,7 @@
 		656AFFDC1C6041500029BF3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656AFFDA1C6041500029BF3F /* LaunchScreen.storyboard */; };
 		656AFFE71C6041500029BF3F /* FacegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AFFE61C6041500029BF3F /* FacegramTests.swift */; };
 		656AFFF21C6041500029BF3F /* FacegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656AFFF11C6041500029BF3F /* FacegramUITests.swift */; };
+		65F651E21C647B3E005BF4F0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F651E11C647B3E005BF4F0 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		656AFFED1C6041500029BF3F /* FacegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656AFFF11C6041500029BF3F /* FacegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacegramUITests.swift; sourceTree = "<group>"; };
 		656AFFF31C6041500029BF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F651E11C647B3E005BF4F0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				656A00061C6132C40029BF3F /* ProfileController.swift */,
 				656A00081C6137100029BF3F /* FeedController.swift */,
+				65F651E11C647B3E005BF4F0 /* CustomTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656A00071C6132C40029BF3F /* ProfileController.swift in Sources */,
+				65F651E21C647B3E005BF4F0 /* CustomTabBarController.swift in Sources */,
 				656A00091C6137100029BF3F /* FeedController.swift in Sources */,
 				656AFFD41C6041500029BF3F /* ViewController.swift in Sources */,
 				656A00031C612C300029BF3F /* PostModel.swift in Sources */,
