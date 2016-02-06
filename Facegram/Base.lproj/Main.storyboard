@@ -418,6 +418,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fu7-6r-MFV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="1co-2a-Sce"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="QM8-p9-p9k"/>
@@ -443,9 +444,13 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                         <include reference="su8-JR-kdw"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YYt-7A-Web" appends="YES" id="dNy-S9-WH4"/>
+                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="V7n-GK-JKE" secondAttribute="trailing" constant="-20" id="6Bu-K0-cav"/>
                             <constraint firstItem="fjN-8V-9FI" firstAttribute="top" secondItem="xdW-Vs-irS" secondAttribute="topMargin" constant="17" id="CJC-5f-J3v"/>
@@ -490,6 +495,11 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <include reference="Z5a-cM-lxj"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="YYt-7A-Web" appends="YES" id="JUG-EN-bXi"/>
+                            <outletCollection property="gestureRecognizers" destination="YYt-7A-Web" appends="YES" id="B1Y-Q6-YnC"/>
+                            <outletCollection property="gestureRecognizers" destination="YYt-7A-Web" appends="YES" id="kxv-bz-pRN"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="captionText" destination="MxZ-Gs-b2M" id="B9k-6k-zdh"/>
@@ -497,6 +507,11 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osa-qf-gbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YYt-7A-Web">
+                    <connections>
+                        <action selector="tap:" destination="75p-mw-riz" id="uf4-LR-zIp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1516.5" y="610.5"/>
         </scene>

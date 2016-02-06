@@ -24,6 +24,10 @@ class CaptionController: UIViewController {
         imagePreview.image = selectedImage
     }
     
+    @IBAction func tap(sender: UIButton!) {
+        captionText.resignFirstResponder()
+    }
+    
     @IBAction func submitPressed(sender: UIButton!) {
         if let captionDelegate = self.delegate {
             captionDelegate.captionController(self, didFinishWithCaption: captionText.text)
