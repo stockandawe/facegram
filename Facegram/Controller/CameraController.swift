@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CameraController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CaptionDelegate {
     @IBOutlet weak var selectedImageView: UIImageView!
     @IBOutlet weak var sourceLabel: UILabel!
     
@@ -30,6 +30,25 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate, UINav
             }
         }
         picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func captionController(controller: CaptionController, didFinishWithCaption caption: String) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+        let newPost = Post.init(creator: Profile.currentUser!.username, image: selectedImage, caption: caption)
+        
+        Post.feed!.append(newPost)
+        Profile.currentUser!.posts.append(newPost)
+        
+        // Go to the feed
+        let tabBarContoroller = self.presentingViewController as? UITabBarController
+        tabBarContoroller!.selectedIndex = 0 // this takes you to the feed tab
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destinationVC = segue.destinationViewController as! CaptionController
+        destinationVC.selectedImage = selectedImage
+        destinationVC.delegate = self
     }
     
     @IBAction func takePhoto(sender: UIButton!) {
